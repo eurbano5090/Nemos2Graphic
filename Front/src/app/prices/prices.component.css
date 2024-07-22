@@ -1,0 +1,8 @@
+#div1 {
+    overflow:scroll;
+    height:300px;
+    overflow-x: hidden;
+}
+#div1 table {
+      background-color:lightgray;
+}

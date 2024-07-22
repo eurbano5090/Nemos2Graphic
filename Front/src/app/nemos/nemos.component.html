@@ -1,0 +1,15 @@
+<table class="table table-bordered table-hover" >
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+          </tr>
+    </thead>
+   <tbody>
+    <tr *ngFor="let nemo of nemos" [(ngModel)]="nemo.selected" (click)="onClick(nemo.symbol)">
+        <th scope="row">{{nemo.symbol}}</th>
+        <td>{{nemo.name}}</td>  
+    </tr>
+   </tbody>
+</table>
+

@@ -1,0 +1,17 @@
+<div id="div1">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Precio</th>
+              </tr>
+        </thead>
+       <tbody>
+        <tr *ngFor="let date of historical" [(ngModel)]="date.selected">
+            <th scope="row">{{date.date}}</th>
+            <td>{{date.close}}</td>  
+        </tr>
+       </tbody>
+    </table>
+    
+</div>
